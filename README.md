@@ -3,7 +3,8 @@ This repository was created to document three beginner automation projects using
 
 # objective
 My main objective with these simple projects is to learn the following topics:
-- Real world use case for Python
+
+- Real world use case for Python 
 - Standard libraries
 - Interaction with APIs
 
