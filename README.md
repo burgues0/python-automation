@@ -13,6 +13,19 @@ My main objective with these simple projects is to learn the following topics:
 ## Projects
 
 - Multi-Clipboard
+
+A Clipboard is an area where something we copied (Ctrl + C) is stored, but this area is limited to one item only, because when you copy another item, the most recent copy overrides the previous ones. The idea behing the Multi-Clipboard is to allow us to store multiple things on your clipboard, instead of only the last copied item.
+
+### Instructions
+
+Inside your terminal, in the correct directory, you must start the python script with the correct command to use it.
+
+To start the script, use the following command:
+
+```txt
+python multi-clipboard.py <command>
+```
+
 - Weather API
 - Send an Email
 
