@@ -23,8 +23,24 @@ Inside your terminal, in the correct directory, you must start the python script
 To start the script, use the following command:
 
 ```txt
-python multi-clipboard.py <command>
+python multi-clipboard.py <param>
 ```
+
+The `<param>` bit reffers to the parameters that you can use within the program.
+
+Those parameters are:
+
+- Save
+
+Asks for a Key that will save whatever data that is currently in your clipboard. With this Key you can get whatever is saved under it.
+
+- List
+
+Lists all the diferent clipboard items and their respective Keys saved in your application.
+
+- Load
+
+Inputs the desired Key, and Loads the data saved with it to your PC clipboard.
 
 - Weather API
 - Send an Email
