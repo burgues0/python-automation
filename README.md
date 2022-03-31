@@ -43,7 +43,7 @@ Lists all the diferent clipboard items and their respective Keys saved in your a
 Inputs the desired Key, and Loads the data saved with it to your PC clipboard.
 
 - Weather API
-- Send an Email
+- Email Sender
 
 ## Credits
 
