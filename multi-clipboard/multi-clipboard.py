@@ -22,7 +22,9 @@ def load_data(file_path):
     except:
         return {}
 
-#implement delete key function!!!!
+def delete_data(file_path, data):
+    with open(file_path, "w") as new_stored_data:
+        json.dump(data, new_stored_data)
 
 try:
     arguments, values = getopt.getopt(arg_list, options, long_options)
@@ -42,20 +44,23 @@ try:
             else:
                 clipboard.copy(data[cur_value])
                 print(f"Data copied to the clipboard: \"{data[cur_value]}\"")
-
         elif(cur_arg in ("-p", "--paste")):
             #paste argument, pastes current clipboard onto the multi-clipboard assigning it to the key passed in the argument
             data[cur_value] = clipboard.paste()
             save_data(SAVED_DATA_PATH, data)
             print(f"Data saved into the key \"{cur_value}\": {data[cur_value]}")
-
         elif(cur_arg in ("-l", "--list")):
             for keys in data:
                 print(f"------------------\n{keys} = \"{data[keys]}\"")
             print("------------------")
-
         elif(cur_arg in ("-d", "--delete")):
-            print()
+            for items in data:
+                if(items == cur_value):
+                    print(f"Item deleted: \"{items}\": \"{data[cur_value]}\"")
+                    data.pop(cur_value)
+                    break
+            delete_data(SAVED_DATA_PATH, data)
+            
 
 except getopt.error as err:
     print(str(err))
