@@ -23,24 +23,33 @@ Inside your terminal, in the correct directory, you must start the python script
 To start the script, use the following command:
 
 ```txt
-python multi-clipboard.py <param>
+python multi-clipboard.py -<param>
 ```
 
 The `<param>` bit reffers to the parameters that you can use within the program.
 
 Those parameters are:
 
-- Save
+- -p `<key>`
 
-Asks for a Key that will save whatever data that is currently in your clipboard. With this Key you can get whatever is saved under it.
+Asks for a Key that will paste whatever data that is currently in your clipboard. With this Key you can get whatever is assigned to it.
 
-- List
+- -l
 
 Lists all the diferent clipboard items and their respective Keys saved in your application.
 
-- Load
+- -c `<key>`
 
-Inputs the desired Key, and Loads the data saved with it to your PC clipboard.
+Inputs the desired Key, and copies the data saved with it to your PC clipboard.
+
+- -d `<key>`
+
+Deletes the item in the clipboard that reffers to the specified key.
+
+### Articles
+
+- <https://www.geeksforgeeks.org/getopt-module-in-python/>
+- <https://python.tutorialink.com/how-to-delete-json-object-using-python/>
 
 - Weather API
 - Email Sender
