@@ -39,7 +39,7 @@ try:
 
         elif(cur_arg in ("-c", "--copy")):
             #copy argument, copies data from the key passed in the command argument
-            if cur_value not in data:
+            if(cur_value not in data):
                 print(f"Key \"{cur_value}\" does not exist. Please insert a valid key.")
             else:
                 clipboard.copy(data[cur_value])
@@ -59,8 +59,7 @@ try:
                     print(f"Item deleted: \"{items}\": \"{data[cur_value]}\"")
                     data.pop(cur_value)
                     break
-            delete_data(SAVED_DATA_PATH, data)
-            
+            delete_data(SAVED_DATA_PATH, data)    
 
 except getopt.error as err:
     print(str(err))
