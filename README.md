@@ -46,13 +46,14 @@ Inputs the desired Key, and copies the data saved with it to your PC clipboard.
 
 Deletes the item in the clipboard that reffers to the specified key.
 
-#### Articles
+### Articles
 
 - <https://www.geeksforgeeks.org/getopt-module-in-python/>
 - <https://python.tutorialink.com/how-to-delete-json-object-using-python/>
 
-- Weather API
-- Email Sender
+### Weather API
+
+### Email Sender
 
 ## Credits
 
